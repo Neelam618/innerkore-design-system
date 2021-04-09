@@ -23,7 +23,7 @@ export type ButtonTypes = {
   /** Add href to anchor tag */
   href?: string;
 
-  /** Open link in new tab */
+  /** Target attribute values */
   target: '_blank' | '_self' | '_parent' | '_top';
 
   /** Add icon path to the button */
