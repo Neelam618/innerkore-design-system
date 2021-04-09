@@ -11,4 +11,4 @@ export const FooterMini1a = (args: FooterMini1Types) => {
 };
 FooterMini1a.args = {
     copyRightTxt: '© 2021 Landify UI Kit. All rights reserved'
-  };
+};

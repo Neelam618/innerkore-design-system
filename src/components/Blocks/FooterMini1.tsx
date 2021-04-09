@@ -7,34 +7,23 @@ import SocialIcons from '../Core/SocialIcons';
 
 
 export type FooterMini1Types = {
-    /** Label of the button */
-    // label: string;
-
-    /** Add classes to component */
-    // className?: string;
 
     /** Add href to anchor tag */
     href?: string;
 
-    /** Target attribute values */
-    // target: '_blank' | '_self' | '_parent' | '_top';
-
-    /** Add icon path to the button */
+    /** Add icon path for social icons */
     icon1:string, icon2: string; icon3:string; icon4:string;
     
+    /** Add social icon links */
     link1:string; link2:string; link3: string; link4:string;
 
-    /** Specify icon alignment */
-    //   align?: 'left' | 'right';
+    /** Enter copyright text */
     copyRightTxt: string;
 };
 
 
 export const FooterMini1: FC<FooterMini1Types> = ({
-    copyRightTxt ='© 2020 Landify UI Kit. All rights reserved',
-    icon1 = Insta, icon2 = Twitter, icon3 = Dribble, icon4 = Youtube,
-    // link1 = 'https://instagram.com/', link2 = 'https://twitter.com/', link3 = 'https://dribble.com/', link4 = 'https://youtube.com/',
-   
+    copyRightTxt ='© 2020 Landify UI Kit. All rights reserved'  
 }) => {
     return (
         <div className='lg:flex flex-col lg:flex-row lg:justify-between lg:items-center py-6 px-5 lg:px-40 bg-gray-900'>
@@ -45,6 +34,5 @@ export const FooterMini1: FC<FooterMini1Types> = ({
         </div>
     )
 };
-
   
 export default FooterMini1;
