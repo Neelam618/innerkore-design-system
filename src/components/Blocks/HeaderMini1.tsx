@@ -36,9 +36,9 @@ export const HeaderMini1: FC<HeaderMini1Types> = ({
    
 }) => {
     return (
-        <div className='flex justify-between items-center py-6 px-40 bg-gray-900'>
-            <div className='text-gray-300 text-sm'>{copyRightTxt}</div>
-            <div className='flex'>
+        <div className='lg:flex flex-col lg:flex-row lg:justify-between lg:items-center py-6 px-5 lg:px-40 bg-gray-900'>
+            <div className='text-gray-400 text-sm text-center lg:text-left'>{copyRightTxt}</div>
+            <div className='flex mt-5 lg:mt-0 justify-center lg:justify-end'>
                 <a href={link1} className='inline-block ml-4 w-6 h-6 bg-gray-800 rounded-full flex items-center justify-center' target='_blank'><img src={icon1} className='h-3' /></a>
                 <a href={link2} className='inline-block ml-4 w-6 h-6 bg-gray-800 rounded-full flex items-center justify-center'target='_blank'><img src={icon2} className='h-3' /></a>
                 <a href={link3} className='inline-block ml-4 w-6 h-6 bg-gray-800 rounded-full flex items-center justify-center' target='_blank'><img src={icon3} className='h-3' /></a>
