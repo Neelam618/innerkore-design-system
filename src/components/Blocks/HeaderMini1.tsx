@@ -10,13 +10,13 @@ export type HeaderMini1Types = {
     // label: string;
 
     /** Add classes to component */
-    className?: string;
+    // className?: string;
 
     /** Add href to anchor tag */
     href?: string;
 
     /** Target attribute values */
-    target: '_blank' | '_self' | '_parent' | '_top';
+    // target: '_blank' | '_self' | '_parent' | '_top';
 
     /** Add icon path to the button */
     icon1:string, icon2: string; icon3:string; icon4:string;
