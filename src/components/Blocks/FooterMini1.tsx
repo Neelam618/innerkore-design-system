@@ -5,7 +5,7 @@ import Dribble from '../../../public/img/dribble.svg';
 import Youtube from '../../../public/img/youtube.svg';
 
 
-export type HeaderMini1Types = {
+export type FooterMini1Types = {
     /** Label of the button */
     // label: string;
 
@@ -29,7 +29,7 @@ export type HeaderMini1Types = {
 };
 
 
-export const HeaderMini1: FC<HeaderMini1Types> = ({
+export const FooterMini1: FC<FooterMini1Types> = ({
     copyRightTxt ='© 2020 Landify UI Kit. All rights reserved',
     icon1 = Insta, icon2 = Twitter, icon3 = Dribble, icon4 = Youtube,
     link1 = 'https://instagram.com/', link2 = 'https://twitter.com/', link3 = 'https://dribble.com/', link4 = 'https://youtube.com/',
@@ -49,4 +49,4 @@ export const HeaderMini1: FC<HeaderMini1Types> = ({
 };
 
   
-export default HeaderMini1;
+export default FooterMini1;
