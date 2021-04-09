@@ -1,19 +1,14 @@
 import React from 'react';
 import { HeaderMini1, HeaderMini1Types } from '../../components/Blocks/HeaderMini1';
-import Container from '../../components/Core/Container';
 
 export default {
-  title: 'Blocks/HeaderMini1',
-  component: HeaderMini1,
-  argTypes: {
-    label: { control: 'text' },
-  },
+    title: 'Blocks/HeaderMini1',
+    component: HeaderMini1,
 };
 
-export const MediumNormal = (args: HeaderMini1Types) => {
-  return <HeaderMini1 {...args} />;
+export const HeaderMini1a = (args: HeaderMini1Types) => {
+    return <HeaderMini1 {...args} />;
 };
-
-MediumNormal.args = {
-
-};
+HeaderMini1a.args = {
+    copyRightTxt: '© 2021 Landify UI Kit. All rights reserved'
+  };
