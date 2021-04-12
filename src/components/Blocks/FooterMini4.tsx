@@ -2,9 +2,6 @@ import React, { FC } from 'react';
 
 export type FooterMini4Types = {
 
-    /** Add href to anchor tag */
-    href?: string;
-
     /** Add icon path for social icons */
     icon1:string, icon2: string; icon3:string; icon4:string;
     
@@ -18,7 +15,6 @@ export type FooterMini4Types = {
 
     logoAlt:string;
 };
-
 
 export const FooterMini4: FC<FooterMini4Types> = ({
     copyRightTxt,
