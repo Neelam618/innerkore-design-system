@@ -15,7 +15,7 @@ export const FooterMini3: FC<FooterMini3Types> = ({
     navTxt1 ='Home', navTxt2 ='About', navTxt3 ='Blog', navTxt4 ='Contact'
 }) => {
     return (
-        <div className='flex justify-between py-6 px-5 lg:px-40 bg-gray-900'>
+        <div className='flex justify-between py-6 px-5 md:px-20 xl:px-40 bg-black'>
             <div>
                 <nav>
                     <ul className='flex'>

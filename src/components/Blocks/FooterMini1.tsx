@@ -26,7 +26,7 @@ export const FooterMini1: FC<FooterMini1Types> = ({
     copyRightTxt ='© 2020 Landify UI Kit. All rights reserved'  
 }) => {
     return (
-        <div className='lg:flex flex-col lg:flex-row lg:justify-between lg:items-center py-6 px-5 lg:px-40 bg-gray-900'>
+        <div className='lg:flex flex-col lg:flex-row lg:justify-between lg:items-center py-6 px-5 md:px-20 xl:px-40 bg-black'>
             <div className='text-gray-400 text-sm text-center lg:text-left'>{copyRightTxt}</div>
             <SocialIcons 
             icon1 = {Insta} icon2 = {Twitter} icon3 = {Dribble} icon4 = {Youtube}
