@@ -4,8 +4,6 @@ import Twitter from '../../../public/img/twitter.svg';
 import Dribble from '../../../public/img/dribble.svg';
 import Youtube from '../../../public/img/youtube.svg';
 import Logo from '../../../public/img/logo.png'
-// import SocialIcons from '../Core/SocialIcons';
-
 
 export type FooterMini4Types = {
 
@@ -29,8 +27,8 @@ export type FooterMini4Types = {
 
 export const FooterMini4: FC<FooterMini4Types> = ({
     copyRightTxt ='© 2020 Landify UI Kit. All rights reserved',
-    icon1 = Insta, icon2 = Twitter, icon3 = Dribble, icon4 = Youtube,
-    link1 = 'https://instagram.com/', link2 = 'https://twitter.com/', link3 = 'https://dribble.com/', link4 = 'https://youtube.com/', 
+    icon1 = Insta, icon2 = Dribble, icon3 = Twitter, icon4 = Youtube,
+    link1 = 'https//instagram.com', link2 = 'https//dribble.com', link3 = 'https//twitter.com', link4 = 'https//youtube.com', 
     logo = Logo, logoAlt = 'Landify'
 }) => {
     return (
@@ -40,10 +38,10 @@ export const FooterMini4: FC<FooterMini4Types> = ({
             </div>
             <div className='text-gray-400 text-sm text-center lg:text-auto mt-6 lg:mt-0'>{copyRightTxt}</div>
             <div className='flex mt-6 lg:mt-0 justify-center lg:justify-end lg:ml-8'>
-                <a href={link1} className='inline-block w-6 h-6 bg-gray-800 rounded-full flex items-center justify-center' target='_blank'><img src={icon1} className='h-3' /></a>
-                <a href={link2} className='inline-block ml-4 w-6 h-6 bg-gray-800 rounded-full flex items-center justify-center'target='_blank'><img src={icon2} className='h-3' /></a>
-                <a href={link3} className='inline-block ml-4 w-6 h-6 bg-gray-800 rounded-full flex items-center justify-center' target='_blank'><img src={icon3} className='h-3' /></a>
-                <a href={link4} className='inline-block ml-4 w-6 h-6 bg-gray-800 rounded-full flex items-center justify-center' target='_blank'><img src={icon4} className='h-3' /></a>
+                <a href={link1} className={icon1? 'bg-gray-800 inline-block w-6 h-6 rounded-full flex items-center justify-center' : ''} target='_blank'><img src={icon1} className='h-3' /></a>
+                <a href={link2} className={icon2? 'inline-block ml-4 w-6 h-6 bg-gray-800 rounded-full flex items-center justify-center' : ''} target='_blank'><img src={icon2} className='h-3' /></a>
+                <a href={link3} className={icon3? 'inline-block ml-4 w-6 h-6 bg-gray-800 rounded-full flex items-center justify-center' : ''} target='_blank'><img src={icon3} className='h-3' /></a>
+                <a href={link4} className={icon4? 'inline-block ml-4 w-6 h-6 bg-gray-800 rounded-full flex items-center justify-center' : ''} target='_blank'><img src={icon4} className='h-3' /></a>
             </div>
         </div>
     )
