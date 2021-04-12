@@ -1,8 +1,6 @@
 import React from 'react';
 import { FooterMini7, FooterMini7Types } from '../../components/Blocks/FooterMini7';
 import Logo from '../../../public/img/logo.png';
-import Badge1 from '../../../public/img/badge1.png';
-import Badge2 from '../../../public/img/badge2.png';
 
 import Insta from '../../../public/img/instagram.svg';
 import Twitter from '../../../public/img/twitter.svg';
@@ -22,10 +20,6 @@ export const FooterMini7a = (args: FooterMini7Types) => {
 
 FooterMini7a.args = {
     copyRightTxt: '© 2020 Landify UI Kit. All rights reserved',
-    downloadLink: '#', 
-    licenseLink: '#', 
-    downloadTxt: 'Download Now', 
-    licenseTxt: 'License',
     navLink1: '#', 
     navLink2: '#', 
     navLink3: '#', 
@@ -39,11 +33,6 @@ FooterMini7a.args = {
     navTxt4: 'Careers', 
     navTxt5: 'Help', 
     navTxt6: 'Privacy Policy',
-    badgeTitle: 'Get the App', 
-    badge1: Badge1, 
-    badgeAlt1: 'App Store', 
-    badge2: Badge2, 
-    badgeAlt2: 'Google Play',
     icon1: Insta,
     iconLink1: 'https://instagram.com',
     icon2: Twitter,
