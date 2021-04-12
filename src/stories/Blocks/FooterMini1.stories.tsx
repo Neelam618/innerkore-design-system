@@ -17,7 +17,7 @@ export const FooterMini1a = (args: FooterMini1Types) => {
     return <FooterMini1 {...args} />;
 };
 FooterMini1a.args = {
-    copyRightTxt: '© 2021 Landify UI Kit. All rights reserved',
+    copyRightTxt: '© 2020 Landify UI Kit. All rights reserved',
     icon1: Twitter,
     link1: 'https://twitter.com/',
     icon2: Insta,
@@ -34,7 +34,7 @@ export const FooterMini1b = (args: FooterMini1Types) => {
     return <FooterMini1 {...args} />;
 };
 FooterMini1b.args = {
-    copyRightTxt: '© 2021 Landify UI Kit. All rights reserved',
+    copyRightTxt: '© 2021 Blender All rights reserved',
     icon1: Github,
     link1: 'https//github.com',
     icon2: Insta,

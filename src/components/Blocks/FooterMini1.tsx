@@ -17,7 +17,7 @@ export type FooterMini1Types = {
 
 
 export const FooterMini1: FC<FooterMini1Types> = ({
-    copyRightTxt ='© 2020 Landify UI Kit. All rights reserved',
+    copyRightTxt,
     icon1, icon2, icon3, icon4, icon5,
     link1, link2, link3, link4, link5
   
