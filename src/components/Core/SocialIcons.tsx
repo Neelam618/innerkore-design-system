@@ -20,8 +20,8 @@ export const SocialIcons: FC<SocialIconsTypes> = ({
    
 }) => {
     return (
-        <div className='flex mt-5 lg:mt-0 justify-center lg:justify-end'>
-            <a href={link1} className='inline-block ml-4 w-6 h-6 bg-gray-800 rounded-full flex items-center justify-center' target='_blank'><img src={icon1} className='h-3' /></a>
+        <div className='flex mt-6 lg:mt-0 justify-center lg:justify-end lg:ml-8'>
+            <a href={link1} className='inline-block w-6 h-6 bg-gray-800 rounded-full flex items-center justify-center' target='_blank'><img src={icon1} className='h-3' /></a>
             <a href={link2} className='inline-block ml-4 w-6 h-6 bg-gray-800 rounded-full flex items-center justify-center'target='_blank'><img src={icon2} className='h-3' /></a>
             <a href={link3} className='inline-block ml-4 w-6 h-6 bg-gray-800 rounded-full flex items-center justify-center' target='_blank'><img src={icon3} className='h-3' /></a>
             <a href={link4} className='inline-block ml-4 w-6 h-6 bg-gray-800 rounded-full flex items-center justify-center' target='_blank'><img src={icon4} className='h-3' /></a>
