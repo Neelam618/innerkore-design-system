@@ -7,7 +7,7 @@ export type FooterMini2Types = {
 
 
 export const FooterMini2: FC<FooterMini2Types> = ({
-    copyRightTxt ='© 2020 Landify UI Kit. All rights reserved'  
+    copyRightTxt
 }) => {
     return (
         <div className='py-6 px-5 md:px-20 xl:px-40 bg-black'>
