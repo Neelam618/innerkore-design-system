@@ -27,8 +27,8 @@ export const FooterMini6: FC<FooterMini6Types> = ({
     badgeTitle, badge1, badgeAlt1, badge2, badgeAlt2
 }) => {
     return (
-        <div className='flex justify-between px-5 md:px-20 xl:px-40 py-16 bg-black'>
-            <div className=''>
+        <div className='flex flex-col lg:flex-row justify-between px-5 md:px-20 xl:px-40 py-16 bg-black'>
+            <div className='order-1 lg:order-0 mt-16 lg:mt-0'>
                 <img src={logo} alt="" className='w-20'/> 
                 <div className='mt-6'>
                     <a href={downloadLink} className='text-gray-400 mr-6'>{downloadTxt}</a>
@@ -36,7 +36,7 @@ export const FooterMini6: FC<FooterMini6Types> = ({
                 </div>  
                 <div className='mt-3'>
                     <ul>
-                        <li>
+                        <li className='flex flex-wrap leading-7'>
                             <a href={navLink1} className='text-gray-400 mr-6'>{navTxt1}</a>
                             <a href={navLink2} className='text-gray-400 mr-6'>{navTxt2}</a>
                             <a href={navLink3} className='text-gray-400 mr-6'>{navTxt3}</a>
@@ -48,7 +48,7 @@ export const FooterMini6: FC<FooterMini6Types> = ({
                 </div>
                 <div className='text-gray-400 mt-6'>{copyRightTxt}</div>
             </div>
-            <div>
+            <div className='order-0 lg:order-1'>
                 <h5 className='text-gray-400'>{badgeTitle}</h5>
                 <img src={badge1} alt={badgeAlt1} className='mt-4'/>
                 <img src={badge2} alt={badgeAlt2} className='mt-4'/>
