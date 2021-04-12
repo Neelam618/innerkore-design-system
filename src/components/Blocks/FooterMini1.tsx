@@ -2,9 +2,6 @@ import React, { FC } from 'react';
 
 export type FooterMini1Types = {
 
-    /** Add href to anchor tag */
-    href?: string;
-
     /** Add icon path for social icons */
     icon1:string, icon2: string; icon3:string; icon4:string; icon5:string;
     
