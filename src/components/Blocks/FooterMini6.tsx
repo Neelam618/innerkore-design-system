@@ -59,16 +59,12 @@ export const FooterMini6: FC<FooterMini6Types> = ({ links, navLinks,
           })}
         </div>
         <div className="mt-3">
-          <ul>
-            <li className="flex flex-wrap leading-7">
+          <ul className="flex flex-wrap leading-7">
               {navLinks.map(({ href, anchorTxt }, index) => {
                 return (
-                  <a href={href} className='text-gray-400 mr-6' target="_blank">
-                    {anchorTxt}
-                  </a>
+                  <li><a href={href} className='text-gray-400 mr-6' target="_blank">{anchorTxt}</a></li>
                 );
               })}
-            </li>
           </ul>
         </div>
         <div className="text-gray-400 mt-6">{copyRightTxt}</div>
