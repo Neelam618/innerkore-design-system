@@ -15,7 +15,7 @@ export const FooterMini6a = (args: FooterMini6Types) => {
 
 FooterMini6a.args = {
   copyRightTxt: '© 2020 Landify UI Kit. All rights reserved',
-  Links: [
+  links: [
     {href: '#', anchorTxt: 'Download Now'},
     {href: '#', anchorTxt: 'License'}
   ],

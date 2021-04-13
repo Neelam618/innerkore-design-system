@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
 
-type LinksType = {
+type linksType = {
   href: string;
   anchorTxt: string;
 };
@@ -25,7 +25,7 @@ export type FooterMini6Types = {
   logoAlt: string;
 
   /** Add url with anchor tag text  */
-  Links: LinksType[];
+  links: linksType[];
 
   /** Add url with anchor tag text  */
   navLinks: navLinksType[];
@@ -37,7 +37,7 @@ export type FooterMini6Types = {
   badgeTitle: string;
 };
 
-export const FooterMini6: FC<FooterMini6Types> = ({ Links, navLinks,
+export const FooterMini6: FC<FooterMini6Types> = ({ links, navLinks,
   copyRightTxt,
   badgeTitle, badges,
   logo
@@ -47,7 +47,7 @@ export const FooterMini6: FC<FooterMini6Types> = ({ Links, navLinks,
       <div className="order-1 lg:order-0 mt-16 lg:mt-0">
         <img src={logo} alt="" className="w-20" />
         <div className="flex">
-          {Links.map(({ href, anchorTxt }, index) => {
+          {links.map(({ href, anchorTxt }, index) => {
             return (
               <div className='mt-6 mr-6'>
                 <a href={href} className='text-gray-400' target="_blank">
