@@ -28,3 +28,20 @@ FooterMini4a.args = {
   logoAlt: 'Landify',
   logoPosition: 'left'
 };
+
+export const FooterMini5a = (args: FooterMini4Types) => {
+  return <FooterMini4 {...args} />;
+};
+
+FooterMini5a.args = {
+  socialIconLinks: [
+    { imgSrc: Twitter, href: 'https://twitter.com/' },
+    { imgSrc: Insta, href: 'https://instagram.com/' },
+    { imgSrc: Dribble, href: 'https://dribble.com/' },
+    { imgSrc: Youtube, href: 'https://youtube.com/' },
+  ],
+  copyRightTxt: '© 2020 Landify UI Kit. All rights reserved',
+  logo: Logo,
+  logoAlt: 'Landify',
+  logoPosition: 'right'
+};
