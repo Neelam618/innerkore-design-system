@@ -6,7 +6,7 @@ type hrefWithimgSrcType = {
 };
 
 export type FooterMini1Types = {
-  /** Add social imgSrc hrefs with imgSrc url */
+  /** Add social icon links with img src url */
   hrefs_with_imgSrcs: hrefWithimgSrcType[];
 
   /** Enter copyright text */
