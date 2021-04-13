@@ -15,26 +15,23 @@ export const FooterMini6a = (args: FooterMini6Types) => {
 
 FooterMini6a.args = {
   copyRightTxt: '© 2020 Landify UI Kit. All rights reserved',
-  downloadLink: '#',
-  licenseLink: '#',
-  downloadTxt: 'Download Now',
-  licenseTxt: 'License',
-  navLink1: '#',
-  navLink2: '#',
-  navLink3: '#',
-  navLink4: '#',
-  navLink5: '#',
-  navLink6: '#',
-  logo: Logo,
-  navTxt1: 'About',
-  navTxt2: 'Features',
-  navTxt3: 'Pricing',
-  navTxt4: 'Careers',
-  navTxt5: 'Help',
-  navTxt6: 'Privacy Policy',
+  Links: [
+    {href: '#', anchorTxt: 'Download Now'},
+    {href: '#', anchorTxt: 'License'}
+  ],
+  navLinks: [
+    {anchorTxt: 'About', href: '#'},
+    {anchorTxt: 'Features', href: '#'},
+    {anchorTxt: 'Pricing', href: '#'},
+    {anchorTxt: 'Careers', href: '#'},
+    {anchorTxt: 'Help', href: '#'},
+    {anchorTxt: 'Privacy Policy', href: '#'},
+  ],
+
   badgeTitle: 'Get the App',
-  badge1: Badge1,
-  badgeAlt1: 'App Store',
-  badge2: Badge2,
-  badgeAlt2: 'Google Play',
+  badges: [
+    {imgSrc: Badge1, imgAlt: 'App Store' },
+    {imgSrc: Badge2, imgAlt: 'Google Play' }
+  ],
+  logo: Logo
 };

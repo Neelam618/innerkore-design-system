@@ -1,4 +1,5 @@
 import React from 'react';
+
 import { FooterMini4, FooterMini4Types } from '../../components/Blocks/FooterMini4';
 import Insta from '../../../public/img/instagram.svg';
 import MyLogo from '../../../public/img/mylogo.png';
@@ -26,6 +27,6 @@ FooterMini4a.args = {
   copyRightTxt: '© 2020 Landify UI Kit. All rights reserved',
   logo: Logo,
   logoAlt: 'Landify',
-  leftComponent: <Logo />,
-  rightComponent: <SocialIcons />
+  // leftComponent: <Logo />,
+  // rightComponent: <SocialIcons />
 };

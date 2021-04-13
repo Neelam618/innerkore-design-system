@@ -44,7 +44,7 @@ export const FooterMini4: FC<FooterMini4Types> = ({ copyRightTxt, hrefs_with_img
 
   function Logo(){
     return (
-      <div className="order-1">
+      <div className="">
         <img src={logo} alt={logoAlt} className="w-20 mx-auto" />
       </div>
     );
