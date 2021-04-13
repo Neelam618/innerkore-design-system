@@ -19,19 +19,16 @@ export const FooterMini7a = (args: FooterMini7Types) => {
 
 FooterMini7a.args = {
   copyRightTxt: '© 2020 Landify UI Kit. All rights reserved',
-  navLink1: '#',
-  navLink2: '#',
-  navLink3: '#',
-  navLink4: '#',
-  navLink5: '#',
-  navLink6: '#',
   logo: Logo,
-  navTxt1: 'About',
-  navTxt2: 'Features',
-  navTxt3: 'Pricing',
-  navTxt4: 'Careers',
-  navTxt5: 'Help',
-  navTxt6: 'Privacy Policy',
+  navLinks: [
+    {anchorTxt: 'About', href: '#'},
+    {anchorTxt: 'Features', href: '#'},
+    {anchorTxt: 'Pricing', href: '#'},
+    {anchorTxt: 'Careers', href: '#'},
+    {anchorTxt: 'Help', href: '#'},
+    {anchorTxt: 'Privacy Policy', href: '#'},
+  ],
+
   icon1: Insta,
   iconLink1: 'https://instagram.com',
   icon2: Twitter,

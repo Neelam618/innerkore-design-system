@@ -1,20 +1,11 @@
 import React, { FC } from 'react';
 
+type navLinksType = {
+  href: string;
+  anchorTxt: string;
+}
+
 export type FooterMini7Types = {
-  navLink1: string;
-  navLink2: string;
-  navLink3: string;
-  navLink4: string;
-  navLink5: string;
-  navLink6: string;
-
-  navTxt1: string;
-  navTxt2: string;
-  navTxt3: string;
-  navTxt4: string;
-  navTxt5: string;
-  navTxt6: string;
-
   iconLink1: string;
   iconLink2: string;
   iconLink3: string;
@@ -35,22 +26,15 @@ export type FooterMini7Types = {
 
   /** Enter logo alt text */
   logoAlt: string;
+
+  /** Add url with anchor tag text  */
+  navLinks: navLinksType[];
+
 };
 
 export const FooterMini7: FC<FooterMini7Types> = ({
   copyRightTxt,
-  navLink1,
-  navLink2,
-  navLink3,
-  navLink4,
-  navLink5,
-  navLink6,
-  navTxt1,
-  navTxt2,
-  navTxt3,
-  navTxt4,
-  navTxt5,
-  navTxt6,
+  navLinks,
   logo,
   logoAlt,
   iconLink1,
@@ -71,27 +55,12 @@ export const FooterMini7: FC<FooterMini7Types> = ({
           <img src={logo} alt={logoAlt} className="w-20 mx-auto" />
         </div>
         <div className="mt-8">
-          <ul>
-            <li className="flex justify-center flex-wrap leading-7">
-              <a href={navLink1} className="text-gray-400 mr-6">
-                {navTxt1}
-              </a>
-              <a href={navLink2} className="text-gray-400 mr-6">
-                {navTxt2}
-              </a>
-              <a href={navLink3} className="text-gray-400 mr-6">
-                {navTxt3}
-              </a>
-              <a href={navLink4} className="text-gray-400 mr-6">
-                {navTxt4}
-              </a>
-              <a href={navLink5} className="text-gray-400 mr-6">
-                {navTxt5}
-              </a>
-              <a href={navLink6} className="text-gray-400">
-                {navTxt6}
-              </a>
-            </li>
+          <ul className="flex justify-center flex-wrap leading-7">
+              {navLinks.map(({ href, anchorTxt }, index) => {
+                return (
+                  <li><a href={href} className="text-gray-400 mr-6">{anchorTxt}</a></li>
+                );
+              })}
           </ul>
         </div>
       </div>

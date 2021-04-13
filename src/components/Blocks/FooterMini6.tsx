@@ -9,6 +9,7 @@ type navLinksType = {
   href: string;
   anchorTxt: string;
 }
+
 type badgesType = {
   imgSrc: string;
   imgAlt: string;
