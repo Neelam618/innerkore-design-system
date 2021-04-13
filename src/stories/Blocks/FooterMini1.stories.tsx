@@ -18,11 +18,11 @@ export const FooterMini1a = (args: FooterMini1Types) => {
 };
 FooterMini1a.args = {
   copyRightTxt: '© 2020 Landify UI Kit. All rights reserved',
-  hrefs_with_imgSrcs: [
-    { imgSrc: Twitter, href: 'https://twitter.com/' },
-    { imgSrc: Insta, href: 'https://instagram.com/' },
-    { imgSrc: Dribble, href: 'https://dribble.com/' },
-    { imgSrc: Youtube, href: 'https://youtube.com/' },
-    { imgSrc: Github, href: 'https//github.com' },
+  hrefs_with_icons: [
+    { icon: Twitter, link: 'https://twitter.com/' },
+    { icon: Insta, link: 'https://instagram.com/' },
+    { icon: Dribble, link: 'https://dribble.com/' },
+    { icon: Youtube, link: 'https://youtube.com/' },
+    { icon: Github, link: 'https//github.com' },
   ],
 };
