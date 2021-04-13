@@ -14,13 +14,12 @@ export type FooterMini3Types = {
 };
 
 export const FooterMini3: FC<FooterMini3Types> = ({ copyRightTxt, hrefs_with_anchorTxts }) => {
-  let anchorClassName =
-    'text-gray-400';
+  let anchorClassName = 'text-gray-400';
   return (
     <div className="lg:flex flex-col lg:flex-row lg:justify-between lg:items-center py-6 px-5 md:px-20 xl:px-40 bg-black">
       <div className="flex justify-center lg:justify-start">
-        {hrefs_with_anchorTxts.map(({href, anchorTxt}, index ) => {
-           if (index === 0) {
+        {hrefs_with_anchorTxts.map(({ href, anchorTxt }, index) => {
+          if (index === 0) {
             anchorClassName += ' ml-0';
           } else {
             anchorClassName += ' ml-8';
