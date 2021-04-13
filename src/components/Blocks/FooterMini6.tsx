@@ -18,18 +18,22 @@ export type FooterMini6Types = {
   /** Enter copyright text */
   copyRightTxt: string;
 
+  /** Enter logo path */
   logo: string;
 
+  /** Enter logo alt text */
   logoAlt: string;
 
-  /** Add social icon links with img src url */
+  /** Add url with anchor tag text  */
   Links: LinksType[];
 
-  /** Add navigation links with text */
+  /** Add url with anchor tag text  */
   navLinks: navLinksType[];
 
+  /** Add image src with alt text  */
   badges: badgesType[];
 
+  /** Add title for badges  */
   badgeTitle: string;
 };
 
