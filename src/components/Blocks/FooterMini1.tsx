@@ -26,7 +26,9 @@ export const FooterMini1: FC<FooterMini1Types> = ({
             <div className='flex mt-6 lg:mt-0 justify-center lg:justify-end lg:ml-8'>
                 {links_with_icons.map(({link, icon}, index) => {
                     if (index === 0) {
-                        linkClassName += " ml-4 w-6 h-6";
+                        linkClassName += ' ml-0';
+                    } else {
+                        linkClassName += ' ml-4';
                     }
 
                     return <a href={link} className={linkClassName} target='_blank' >
