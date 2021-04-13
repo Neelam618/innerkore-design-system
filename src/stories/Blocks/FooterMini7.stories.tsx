@@ -1,11 +1,7 @@
 import React from 'react';
 import { FooterMini7, FooterMini7Types } from '../../components/Blocks/FooterMini7';
 import Logo from '../../../public/img/logo.png';
-
-import Insta from '../../../public/img/instagram.svg';
-import Twitter from '../../../public/img/twitter.svg';
-import Dribble from '../../../public/img/dribble.svg';
-import Youtube from '../../../public/img/youtube.svg';
+import { FooterMini1a } from '../../stories/Blocks/FooterMini1.stories';
 
 export default {
   title: 'Blocks/FooterMini7',
@@ -18,7 +14,6 @@ export const FooterMini7a = (args: FooterMini7Types) => {
 };
 
 FooterMini7a.args = {
-  copyRightTxt: '© 2020 Landify UI Kit. All rights reserved',
   logo: Logo,
   navLinks: [
     {anchorTxt: 'About', href: '#'},
@@ -28,13 +23,41 @@ FooterMini7a.args = {
     {anchorTxt: 'Help', href: '#'},
     {anchorTxt: 'Privacy Policy', href: '#'},
   ],
-
-  icon1: Insta,
-  iconLink1: 'https://instagram.com',
-  icon2: Twitter,
-  iconLink2: 'https://twitter.com',
-  icon3: Dribble,
-  iconLink3: 'https://dribble.com',
-  icon4: Youtube,
-  iconLink4: 'https://youtube.com',
 };
+
+export const FooterMini7b = () => (
+  <>
+      <FooterMini7a 
+        logo={Logo} logoAlt='My logo'
+        navLinks={[
+          { anchorTxt: 'About', href: '#' },
+          { anchorTxt: 'Features', href: '#' },
+          { anchorTxt: 'Pricing', href: '#' },
+          { anchorTxt: 'Careers', href: '#' },
+          { anchorTxt: 'Help', href: '#' },
+          { anchorTxt: 'Privacy Policy', href: '#' }
+        ]}
+      />
+      <FooterMini1a  
+        copyRightTxt="© 2020 Landify UI Kit. All rights reserved"
+        hrefs_with_imgSrcs={[
+          {
+            href: 'https://twitter.com/',
+            imgSrc: 'static/media/public/img/twitter.svg'
+          },
+          {
+            href: 'https://instagram.com/',
+            imgSrc: 'static/media/public/img/instagram.svg'
+          },
+          {
+            href: 'https://dribble.com/',
+            imgSrc: 'static/media/public/img/dribble.svg'
+          },
+          {
+            href: 'https://youtube.com/',
+            imgSrc: 'static/media/public/img/youtube.svg'
+          },
+        ]}
+      />
+  </>
+)
