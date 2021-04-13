@@ -18,27 +18,11 @@ export const FooterMini1a = (args: FooterMini1Types) => {
 };
 FooterMini1a.args = {
     copyRightTxt: '© 2020 Landify UI Kit. All rights reserved',
-    icon1: Twitter,
-    link1: 'https://twitter.com/',
-    icon2: Insta,
-    link2: 'https://instagram.com/',
-    icon3: Dribble,
-    link3: 'https://dribble.com/',
-    icon4: Youtube,
-    link4: 'https://youtube.com/',
-    icon5: Github,
-    link5: 'https//github.com' 
-};
-
-export const FooterMini1b = (args: FooterMini1Types) => {
-    return <FooterMini1 {...args} />;
-};
-FooterMini1b.args = {
-    copyRightTxt: '© 2021 Blender All rights reserved',
-    icon1: Github,
-    link1: 'https//github.com',
-    icon2: Insta,
-    link2: 'https://instagram.com/',
-    icon3: Dribble,
-    link3: 'https://dribble.com/',
+    links_with_icons: [
+        { icon: Twitter, link: 'https://twitter.com/' },
+        { icon: Insta, link: 'https://instagram.com/' },
+        { icon: Dribble, link: 'https://dribble.com/' },
+        { icon: Youtube, link: 'https://youtube.com/' },
+        { icon: Github, link: 'https//github.com' }
+    ] 
 };
