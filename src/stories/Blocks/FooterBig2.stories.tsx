@@ -1,5 +1,6 @@
 import React from 'react';
 import { FooterBig2, FooterBig2Types } from '../../components/Blocks/FooterBig2';
+import { FooterMini1a } from '../../stories/Blocks/FooterMini1.stories';
 import Badge1 from '../../../public/img/badge1.png';
 import Badge2 from '../../../public/img/badge2.png';
 
@@ -9,13 +10,13 @@ export default {
     title: 'Blocks/Footer/Big/FooterBig2',
   
     component: FooterBig2,
-  };
+};
   
-  export const FooterBig2a = (args: FooterBig2Types) => {
+export const FooterBig2a = (args: FooterBig2Types) => {
     return <FooterBig2 {...args} />;
-  };
+};
   
-  FooterBig2a.args = {
+FooterBig2a.args = {
   
    navComponents: [
       { title: 'Product',
@@ -65,9 +66,9 @@ export default {
     logo: Logo,
     logoAlt: 'My Logo',
     copyRightTxt: '© 2020 Landify UI Kit. All rights reserved'
-  };
+};
   
-  export const FooterBig3 = () => (
+export const FooterBig3 = () => (
     <>
       <FooterBig2a 
         navComponents={[
@@ -106,5 +107,33 @@ export default {
         logoAlt='My Logo'
       />
     </>
+)
+
+export const FooterBig3a = () => (
+    <>
+      <FooterBig3 />
+      <FooterMini1a  
+      copyRightTxt="© 2020 Landify UI Kit. All rights reserved"
+      hrefs_with_imgSrcs={[
+        {
+          href: 'https://twitter.com/',
+          imgSrc: 'static/media/public/img/twitter.svg'
+        },
+        {
+          href: 'https://instagram.com/',
+          imgSrc: 'static/media/public/img/instagram.svg'
+        },
+        {
+          href: 'https://dribble.com/',
+          imgSrc: 'static/media/public/img/dribble.svg'
+        },
+        {
+          href: 'https://youtube.com/',
+          imgSrc: 'static/media/public/img/youtube.svg'
+        },
+      ]}
+    />
+    </>
   )
+
   
