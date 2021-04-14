@@ -18,28 +18,41 @@ export default {
   FooterBig2a.args = {
   
    navComponents: [
-      { title: 'Company',
+      { title: 'Product',
         navLinksWithAnchorTxt: [
-          {href: '#', anchorTxt: 'About Us'}, 
-          {href: '#', anchorTxt: 'Blog'},
-          {href: '#', anchorTxt: 'Careers'},
-          {href: '#', anchorTxt: 'Contact Us'} 
+          {href: '#', anchorTxt: 'Overview'}, 
+          {href: '#', anchorTxt: 'Features'},
+          {href: '#', anchorTxt: 'Tutorials'},
+          {href: '#', anchorTxt: 'Pricing'},
+          {href: '#', anchorTxt: 'Releases'}  
         ],
       },
   
+      { title: 'Company',
+        navLinksWithAnchorTxt: [
+          {href: '#', anchorTxt: 'About'}, 
+          {href: '#', anchorTxt: 'Press'},
+          {href: '#', anchorTxt: 'Careers'},
+          {href: '#', anchorTxt: 'Contact'},
+          {href: '#', anchorTxt: 'Partners'},
+        ],
+      },
       { title: 'Support',
         navLinksWithAnchorTxt: [
           {href: '#', anchorTxt: 'Help Center'}, 
-          {href: '#', anchorTxt: 'Safety Center'},
-          {href: '#', anchorTxt: 'Community Guidelines'},
+          {href: '#', anchorTxt: 'Terms of service'},
+          {href: '#', anchorTxt: 'Legal'},
+          {href: '#', anchorTxt: 'Privacy Policy'},
+          {href: '#', anchorTxt: 'Status'},
         ],
       },
-      { title: 'Legal',
+      { title: 'Follow us',
         navLinksWithAnchorTxt: [
-          {href: '#', anchorTxt: 'Cookies Policy'}, 
-          {href: '#', anchorTxt: 'Privacy Policy'},
-          {href: '#', anchorTxt: 'Terms of Service'},
-          {href: '#', anchorTxt: 'Law Enforcement'},
+          {href: '#', anchorTxt: 'Facebook'}, 
+          {href: '#', anchorTxt: 'Twitter'},
+          {href: '#', anchorTxt: 'Dribbble'},
+          {href: '#', anchorTxt: 'Instagram'},
+          {href: '#', anchorTxt: 'LinkedIn'},
         ],
       },
     ],
