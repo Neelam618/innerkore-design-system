@@ -67,48 +67,44 @@ export default {
     copyRightTxt: '© 2020 Landify UI Kit. All rights reserved'
   };
   
-//   export const FooterBig1b = () => (
-//     <>
-//       <FooterBig2a 
-//         navComponents={[
-//           {
-//             navLinksWithAnchorTxt: [
-//               { anchorTxt: 'About Us', href: '#' },
-//               { anchorTxt: 'Blog', href: '#' },
-//               { anchorTxt: 'Careers', href: '#' },
-//               { anchorTxt: 'Contact Us', href: '#' }
-//             ],
-//             title: 'Company'
-//           },
-//           {
-//             navLinksWithAnchorTxt: [
-//               { anchorTxt: 'Help Center', href: '#' },
-//               { anchorTxt: 'Safety Center', href: '#' },
-//               { anchorTxt: 'Community Guidelines', href: '#' }
-//             ],
-//             title: 'Support'
-//           },
-//           {
-//             navLinksWithAnchorTxt: [
-//               { anchorTxt: 'Cookies Policy', href: '#' },
-//               { anchorTxt: 'Privacy Policy', href: '#' },
-//               { anchorTxt: 'Terms of Service', href: '#' },
-//               { anchorTxt: 'Law Enforcement', href: '#' }
-//             ],
-//             title: 'Legal'
-//           }
-//         ]}
-//       />
-  
-//       <FooterMini1a  
-//         copyRightTxt="© 2020 Landify UI Kit. All rights reserved"
-//         hrefs_with_imgSrcs={[
-//           { href: 'https://twitter.com/', imgSrc: 'static/media/public/img/twitter.svg' },
-//           { href: 'https://instagram.com/', imgSrc: 'static/media/public/img/instagram.svg' },
-//           { href: 'https://dribble.com/', imgSrc: 'static/media/public/img/dribble.svg' },
-//           { href: 'https://youtube.com/', imgSrc: 'static/media/public/img/youtube.svg' },
-//         ]}
-//       />
-//     </>
-//   )
+  export const FooterBig3 = () => (
+    <>
+      <FooterBig2a 
+        navComponents={[
+          {
+            navLinksWithAnchorTxt: [
+              { anchorTxt: 'Overview', href: '#' },
+              { anchorTxt: 'Features', href: '#' },
+              { anchorTxt: 'Tutorials', href: '#' },
+              { anchorTxt: 'Pricing', href: '#' },
+              { anchorTxt: 'Releases', href: '#' }
+            ],
+            title: 'Product'
+          },
+          {
+            navLinksWithAnchorTxt: [
+              { anchorTxt: 'About', href: '#' },
+              { anchorTxt: 'Press', href: '#' },
+              { anchorTxt: 'Careers', href: '#' },
+              { anchorTxt: 'Contact', href: '#' },
+              { anchorTxt: 'Partners', href: '#' }
+            ],
+            title: 'Company'
+          },
+          {
+            navLinksWithAnchorTxt: [
+              { anchorTxt: 'Help Center', href: '#' },
+              { anchorTxt: 'Terms of service', href: '#' },
+              { anchorTxt: 'Legal', href: '#' },
+              { anchorTxt: 'Privacy Policy', href: '#' },
+              { anchorTxt: 'Status', href: '#' }
+            ],
+            title: 'Support'
+          }
+        ]} 
+        logo={Logo}
+        logoAlt='My Logo'
+      />
+    </>
+  )
   

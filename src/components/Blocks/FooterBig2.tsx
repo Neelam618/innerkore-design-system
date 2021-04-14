@@ -14,14 +14,14 @@ export type FooterBig2Types = {
   navComponents: NavComponentType[];
   logo: string; 
   logoAlt: string;
-  copyRightTxt: string;
+  copyRightTxt?: string;
 };
 
 export const NavComponent: FC<NavComponentType> = ({
   navLinksWithAnchorTxt, title
 }) => {
   return (
-    <div>
+    <div className=''>
       <h4 className='text-gray-400 text-lg font-medium mb-6'>{title}</h4>
       {navLinksWithAnchorTxt.map(({ href, anchorTxt }, index) => {
         return (
@@ -47,7 +47,7 @@ export const FooterBig2: FC<FooterBig2Types> = ({
                 <p className='text-gray-400 text-xs mt-8'>{copyRightTxt}</p>
             </div>
             <div className='mt-10 lg:mt-0'>
-                <div className='grid grid-flow-col grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 grid-rows-4 sm:grid-rows-2 lg:grid-rows-2 xl:grid-rows-1 gap-10 md:gap-10 xl:gap-20'>
+                <div className='grid grid-flow-col grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 grid-rows-4 sm:grid-rows-2 lg:grid-rows-2 xl:grid-rows-1 gap-10 md:gap-10 xl:gap-20'>
                     {navComponents.map(({navLinksWithAnchorTxt,title}, index) => {
                         return (
                         <NavComponent navLinksWithAnchorTxt={navLinksWithAnchorTxt} title={title}/>
