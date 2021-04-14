@@ -45,14 +45,14 @@ export const FooterBig1: FC<FooterBig1Types> = ({
 }) => {
   return (
     <div className="bg-black">
-      <div className='lg:flex flex-col lg:flex-row lg:justify-between lg:items-start border-b-2 border-gray-900 py-16 px-5 md:px-20 xl:px-40'>
+      <div className='grid grid-flow-col grid-cols-2 lg:grid-cols-4 grid-rows-4 md:grid-rows-2 lg:grid-rows-1 gap-6 md:gap-10 border-b-2 border-gray-900 py-16 px-5 md:px-20 xl:px-40'>
         {navComponents.map(({navLinksWithAnchorTxt,title}, index) => {
           return (
             <NavComponent navLinksWithAnchorTxt={navLinksWithAnchorTxt} title={title}/>
           );
         })}
         <div className="">
-          <h5 className="text-gray-400">{badgeTitle}</h5>
+          <h5 className="text-gray-400 text-lg font-medium">{badgeTitle}</h5>
           {badges.map(({ imgSrc, imgAlt }, index) => {
             return (
               <img src={imgSrc} alt={imgAlt} className="mt-4" />

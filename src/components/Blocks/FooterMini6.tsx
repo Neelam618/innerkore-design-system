@@ -70,7 +70,7 @@ export const FooterMini6: FC<FooterMini6Types> = ({ links, navLinks,
         <div className="text-gray-400 mt-6">{copyRightTxt}</div>
       </div>
       <div className="order-0 lg:order-1">
-        <h5 className="text-gray-400">{badgeTitle}</h5>
+        <h5 className="text-gray-400 text-lg font-medium">{badgeTitle}</h5>
         {badges.map(({ imgSrc, imgAlt }, index) => {
           return (
             <img src={imgSrc} alt={imgAlt} className="mt-4" />
