@@ -1,14 +1,15 @@
 import React from 'react';
 import { FooterBig1, FooterBig1Types } from '../../components/Blocks/FooterBig1';
+import { FooterMini1a } from '../../stories/Blocks/FooterMini1.stories';
 import Badge1 from '../../../public/img/badge1.png';
 import Badge2 from '../../../public/img/badge2.png';
 
 import Logo from '../../../public/img/logo.png';
 
-import Insta from '../../../public/img/instagram.svg';
-import Twitter from '../../../public/img/twitter.svg';
-import Dribble from '../../../public/img/dribble.svg';
-import Youtube from '../../../public/img/youtube.svg';
+// import Insta from '../../../public/img/instagram.svg';
+// import Twitter from '../../../public/img/twitter.svg';
+// import Dribble from '../../../public/img/dribble.svg';
+// import Youtube from '../../../public/img/youtube.svg';
 
 export default {
   title: 'Blocks/FooterBig1',
@@ -21,56 +22,137 @@ export const FooterBig1a = (args: FooterBig1Types) => {
 };
 
 FooterBig1a.args = {
-  // copyRightTxt: '© 2020 Landify UI Kit. All rights reserved',
-  // navLink1: '#',
-  // navLink2: '#',
-  // navLink3: '#',
-  // navLink4: '#',
-  // navLink5: '#',
-  // navLink6: '#',
-  // logo: Logo,
-  // navTxt1: 'About',
-  // navTxt2: 'Features',
-  // navTxt3: 'Pricing',
-  // navTxt4: 'Careers',
-  // navTxt5: 'Help',
-  // navTxt6: 'Privacy Policy',
-  // icon1: Insta,
-  // iconLink1: 'https://instagram.com',
-  // icon2: Twitter,
-  // iconLink2: 'https://twitter.com',
-  // icon3: Dribble,
-  // iconLink3: 'https://dribble.com',
-  // icon4: Youtube,
-  // iconLink4: 'https://youtube.com',
-  company: 'Company',
-  companyLink1: '#',
-  companyLink2: '#',
-  companyLink3: '#',
-  companyLink4: '#',
-  companyTxt1: 'About Us',
-  companyTxt2: 'Blog',
-  companyTxt3: 'Careers',
-  companyTxt4: 'Contact Us',
-  support: 'Support',
-  supportLink1: '#',
-  supportLink2: '#',
-  supportLink3: '#',
-  supportTxt1: 'Help Center',
-  supportTxt2: 'Safety Center',
-  supportTxt3: 'Community Guidelines',
-  legal: 'Legal',
-  legalLink1: '#',
-  legalLink2: '#',
-  legalLink3: '#',
-  legalLink4: '#',
-  legalTxt1: 'Cookies Policy',
-  legalTxt2: 'Privacy Policy',
-  legalTxt3: 'Terms of Service',
-  legalTxt4: 'Law Enforcement',
-  badgeTitle: 'Install App',
-  badge1: Badge1,
-  badgeAlt1: 'App Store',
-  badge2: Badge2,
-  badgeAlt2: 'Google Play',
+
+ navComponents: [
+    { title: 'Company',
+      navLinksWithAnchorTxt: [
+        {href: '#', anchorTxt: 'About Us'}, 
+        {href: '#', anchorTxt: 'Blog'},
+        {href: '#', anchorTxt: 'Careers'},
+        {href: '#', anchorTxt: 'Contact Us'} 
+      ],
+    },
+
+    { title: 'Support',
+      navLinksWithAnchorTxt: [
+        {href: '#', anchorTxt: 'Help Center'}, 
+        {href: '#', anchorTxt: 'Safety Center'},
+        {href: '#', anchorTxt: 'Community Guidelines'},
+      ],
+    },
+    { title: 'Legal',
+      navLinksWithAnchorTxt: [
+        {href: '#', anchorTxt: 'Cookies Policy'}, 
+        {href: '#', anchorTxt: 'Privacy Policy'},
+        {href: '#', anchorTxt: 'Terms of Service'},
+        {href: '#', anchorTxt: 'Law Enforcement'},
+      ],
+    },
+  ],
+
+  badgeTitle: 'Get App',
+  badges: [
+    {imgSrc: Badge1, imgAlt: 'App Store' },
+    {imgSrc: Badge2, imgAlt: 'Google Play' }
+  ],
 };
+
+export const FooterBig1b = () => (
+  <>
+      <FooterBig1a 
+        badgeTitle="Get App"
+        badges={[
+          {
+            imgAlt: 'App Store',
+            imgSrc: 'static/media/public/img/badge1.png'
+          },
+          {
+            imgAlt: 'Google Play',
+            imgSrc: 'static/media/public/img/badge2.png'
+          }
+        ]}
+        navComponents={[
+          {
+            navLinksWithAnchorTxt: [
+              {
+                anchorTxt: 'About Us',
+                href: '#'
+              },
+              {
+                anchorTxt: 'Blog',
+                href: '#'
+              },
+              {
+                anchorTxt: 'Careers',
+                href: '#'
+              },
+              {
+                anchorTxt: 'Contact Us',
+                href: '#'
+              }
+            ],
+            title: 'Company'
+          },
+          {
+            navLinksWithAnchorTxt: [
+              {
+                anchorTxt: 'Help Center',
+                href: '#'
+              },
+              {
+                anchorTxt: 'Safety Center',
+                href: '#'
+              },
+              {
+                anchorTxt: 'Community Guidelines',
+                href: '#'
+              }
+            ],
+            title: 'Support'
+          },
+          {
+            navLinksWithAnchorTxt: [
+              {
+                anchorTxt: 'Cookies Policy',
+                href: '#'
+              },
+              {
+                anchorTxt: 'Privacy Policy',
+                href: '#'
+              },
+              {
+                anchorTxt: 'Terms of Service',
+                href: '#'
+              },
+              {
+                anchorTxt: 'Law Enforcement',
+                href: '#'
+              }
+            ],
+            title: 'Legal'
+          }
+        ]}
+      />
+      <FooterMini1a  
+        copyRightTxt="© 2020 Landify UI Kit. All rights reserved"
+        hrefs_with_imgSrcs={[
+          {
+            href: 'https://twitter.com/',
+            imgSrc: 'static/media/public/img/twitter.svg'
+          },
+          {
+            href: 'https://instagram.com/',
+            imgSrc: 'static/media/public/img/instagram.svg'
+          },
+          {
+            href: 'https://dribble.com/',
+            imgSrc: 'static/media/public/img/dribble.svg'
+          },
+          {
+            href: 'https://youtube.com/',
+            imgSrc: 'static/media/public/img/youtube.svg'
+          },
+        ]}
+      />
+  </>
+)

@@ -27,37 +27,37 @@ FooterMini7a.args = {
 
 export const FooterMini7b = () => (
   <>
-      <FooterMini7a 
-        logo={Logo} logoAlt='My logo'
-        navLinks={[
-          { anchorTxt: 'About', href: '#' },
-          { anchorTxt: 'Features', href: '#' },
-          { anchorTxt: 'Pricing', href: '#' },
-          { anchorTxt: 'Careers', href: '#' },
-          { anchorTxt: 'Help', href: '#' },
-          { anchorTxt: 'Privacy Policy', href: '#' }
-        ]}
-      />
-      <FooterMini1a  
-        copyRightTxt="© 2020 Landify UI Kit. All rights reserved"
-        hrefs_with_imgSrcs={[
-          {
-            href: 'https://twitter.com/',
-            imgSrc: 'static/media/public/img/twitter.svg'
-          },
-          {
-            href: 'https://instagram.com/',
-            imgSrc: 'static/media/public/img/instagram.svg'
-          },
-          {
-            href: 'https://dribble.com/',
-            imgSrc: 'static/media/public/img/dribble.svg'
-          },
-          {
-            href: 'https://youtube.com/',
-            imgSrc: 'static/media/public/img/youtube.svg'
-          },
-        ]}
-      />
+    <FooterMini7a 
+      logo={Logo} logoAlt='My logo'
+      navLinks={[
+        { anchorTxt: 'About', href: '#' },
+        { anchorTxt: 'Features', href: '#' },
+        { anchorTxt: 'Pricing', href: '#' },
+        { anchorTxt: 'Careers', href: '#' },
+        { anchorTxt: 'Help', href: '#' },
+        { anchorTxt: 'Privacy Policy', href: '#' }
+      ]}
+    />
+    <FooterMini1a  
+      copyRightTxt="© 2020 Landify UI Kit. All rights reserved"
+      hrefs_with_imgSrcs={[
+        {
+          href: 'https://twitter.com/',
+          imgSrc: 'static/media/public/img/twitter.svg'
+        },
+        {
+          href: 'https://instagram.com/',
+          imgSrc: 'static/media/public/img/instagram.svg'
+        },
+        {
+          href: 'https://dribble.com/',
+          imgSrc: 'static/media/public/img/dribble.svg'
+        },
+        {
+          href: 'https://youtube.com/',
+          imgSrc: 'static/media/public/img/youtube.svg'
+        },
+      ]}
+    />
   </>
 )

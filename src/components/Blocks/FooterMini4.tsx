@@ -55,40 +55,40 @@ export const FooterMini4: FC<FooterMini4Types> = ({ copyRightTxt, socialIconLink
     );
   }
 
-type FooterMini4GenericTypes = {
-  /** Enter copyright text */
-  copyRightTxt: string;
+  type FooterMini4GenericTypes = {
+    /** Enter copyright text */
+    copyRightTxt: string;
 
-  leftComponent: React.ReactNode;
-  rightComponent: React.ReactNode;
-};
+    leftComponent: React.ReactNode;
+    rightComponent: React.ReactNode;
+  };
 
-const FooterMini4Generic: FC<FooterMini4GenericTypes> = ({
-  // copyRightTxt,
-  leftComponent,
-  rightComponent
-}) => {
-  return (
-    <div className="lg:flex flex-col lg:flex-row lg:justify-between lg:items-center py-6 px-5 md:px-20 xl:px-40 bg-black">
-      {leftComponent}
+  const FooterMini4Generic: FC<FooterMini4GenericTypes> = ({
+    // copyRightTxt,
+    leftComponent,
+    rightComponent
+  }) => {
+    return (
+      <div className="lg:flex flex-col lg:flex-row lg:justify-between lg:items-center py-6 px-5 md:px-20 xl:px-40 bg-black">
+        {leftComponent}
 
-      {rightComponent}
+        {rightComponent}
 
-      <SocialIcons />
-    </div>
-  );
-};
+        <SocialIcons />
+      </div>
+    );
+  };
 
-return <FooterMini4Generic
-  copyRightTxt={copyRightTxt}
-  leftComponent={ logoPosition === 'left'? <Logo /> : 
-    <div className="text-gray-400 text-sm text-center lg:text-auto mt-6 lg:mt-0">{copyRightTxt}</div>
-  }
+  return <FooterMini4Generic
+    copyRightTxt={copyRightTxt}
+    leftComponent={ logoPosition === 'left'? <Logo /> : 
+      <div className="text-gray-400 text-sm text-center lg:text-auto mt-6 lg:mt-0">{copyRightTxt}</div>
+    }
 
-  rightComponent={ logoPosition === 'left'? 
-    <div className="text-gray-400 text-sm text-center lg:text-auto mt-6 lg:mt-0">{copyRightTxt}</div> : <Logo /> 
-  }
-  />
+    rightComponent={ logoPosition === 'left'? 
+      <div className="text-gray-400 text-sm text-center lg:text-auto mt-6 lg:mt-0">{copyRightTxt}</div> : <Logo /> 
+    }
+    />
 };
 
 export default FooterMini4;
