@@ -9,7 +9,7 @@ import Youtube from '../../../public/img/youtube.svg';
 import Github from '../../../public/img/github.svg';
 
 export default {
-  title: 'Blocks/FooterMini1',
+  title: 'Blocks/Footer/Mini/FooterMini1',
   component: FooterMini1,
 };
 

@@ -5,7 +5,7 @@ import Badge1 from '../../../public/img/badge1.png';
 import Badge2 from '../../../public/img/badge2.png';
 
 export default {
-  title: 'Blocks/FooterMini6',
+  title: 'Blocks/Footer/Mini/FooterMini6',
   component: FooterMini6,
 };
 

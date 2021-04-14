@@ -8,7 +8,7 @@ import Youtube from '../../../public/img/youtube.svg';
 import Logo from '../../../public/img/logo.png';
 
 export default {
-  title: 'Blocks/FooterMini4',
+  title: 'Blocks/Footer/Mini/FooterMini4',
   component: FooterMini4,
 };
 

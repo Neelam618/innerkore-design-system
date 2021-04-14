@@ -4,7 +4,7 @@ import Logo from '../../../public/img/logo.png';
 import { FooterMini1a } from '../../stories/Blocks/FooterMini1.stories';
 
 export default {
-  title: 'Blocks/FooterMini7',
+  title: 'Blocks/Footer/Mini/FooterMini7',
 
   component: FooterMini7,
 };

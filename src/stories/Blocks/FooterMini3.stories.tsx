@@ -2,7 +2,7 @@ import React from 'react';
 import { FooterMini3, FooterMini3Types } from '../../components/Blocks/FooterMini3';
 
 export default {
-  title: 'Blocks/FooterMini3',
+  title: 'Blocks/Footer/Mini/FooterMini3',
   component: FooterMini3,
 };
 
