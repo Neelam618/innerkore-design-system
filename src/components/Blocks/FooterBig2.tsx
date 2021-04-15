@@ -62,4 +62,3 @@ export const FooterBig2: FC<FooterBig2Types> = ({
 
 export default FooterBig2;
 
-            {/* <div className='grid grid-flow-col grid-cols-2 lg:grid-cols-4 grid-rows-4 md:grid-rows-2 lg:grid-rows-1 gap-6 md:gap-10 grid-end-4'> */}
